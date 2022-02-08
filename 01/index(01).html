@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Learn JavaScript</title>
+    <script>
+      //code one
+      document.getElementById("el").style.color = "red";
+    </script>
+
+    <script>
+      // code two
+      window.onload = function () {
+        document.getElementById("el").style.color = "red";
+      };
+    </script>
+  </head>
+
+  <body>
+    <h1 id="el">Page Title</h1>
+    <script>
+      // Code Three
+      document.getElementById("el").style.color = "red";
+    </script>
+  </body>
+</html>
+<!--
+
+Code (one , two )will not work reason:
+    ->the element <h1> with the id "el" is ambigous for the do edits 
+    on it because this elemnt in the body-After the script tags of 1 & 2 codes 
+    not above the to the compiler recognize this element 
+
+-->
